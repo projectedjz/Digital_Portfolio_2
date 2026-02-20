@@ -38,6 +38,7 @@ function SceneContent({ onSceneReady, modelBounds }) {
 
   return (
     <>
+      <color attach="background" args={["#f5f3f0"]} />
       <PerspectiveCamera
         makeDefault
         position={[0, 1.0, 6.5]}
@@ -132,7 +133,7 @@ export default function Hero({ onEnter }) {
         scrollTrigger: {
           trigger: '.hero-wrapper',
           start: 'top top',
-          end: '+=260%',
+          end: '+=160%',
           scrub: 1.1,
           pin: true,
           pinSpacing: true,
@@ -208,6 +209,15 @@ export default function Hero({ onEnter }) {
         '.hero-overlay',
         {
           opacity: 1,
+          duration: 0.6,
+        },
+        '>-0.2'
+      )
+
+      tl.to(
+        '.hero-wrapper',
+        {
+          backgroundColor: '#000000',
           duration: 0.6,
         },
         '>-0.2'

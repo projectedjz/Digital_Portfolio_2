@@ -26,6 +26,7 @@ function SceneContent() {
 
   return (
     <>
+      <color attach="background" args={["#f5f3f0"]} />
       <PerspectiveCamera
         ref={cameraRef}
         makeDefault
