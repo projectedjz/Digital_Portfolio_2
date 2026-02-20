@@ -1,0 +1,195 @@
+.about-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terminal-command {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.terminal-command .prompt {
+  margin-right: 0.5rem;
+}
+
+.terminal-command .command {
+  color: #ffffff;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+.title-underline {
+  width: 160px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.about-card {
+  display: flex;
+  gap: 3rem;
+  padding: 2.5rem;
+  border: 1px solid #ffffff;
+  background: transparent;
+}
+
+.about-photo {
+  flex-shrink: 0;
+}
+
+.about-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #ffffff;
+}
+
+.about-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-icon {
+  font-size: 1.2rem;
+}
+
+.info-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.info-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #b8b8b8;
+}
+
+.description-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.description-label {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.description-label span {
+  margin-right: 0.5rem;
+}
+
+.description-content {
+  margin-left: 1.5rem;
+  border-left: 2px solid #3a3a3a;
+  padding-left: 1rem;
+}
+
+.description-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-row {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  min-width: 80px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.detail-value {
+  color: #b8b8b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .about-photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title-underline {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .info-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
